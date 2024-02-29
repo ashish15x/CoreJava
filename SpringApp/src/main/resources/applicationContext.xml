@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="e" class="com.edu.spring.Customer">
+		<constructor-arg value="10" type="int"></constructor-arg>
+	</bean>
+
+	<bean id="Constructor" class="com.hughes.setter.Customer">
+		<property name="custName" value="Ashish"></property>
+		<property name="customerId" value="500"></property>
+	</bean>
+
+	<bean id="ls" class="com.edu.spring.ConstListExamp">
+		<constructor-arg value="ABCD">
+		</constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>Ashish</value>
+				<value>Kumar</value>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="maps" class="com.edu.spring.MapSpring">
+		<constructor-arg value="ABCD">
+		</constructor-arg>
+		<constructor-arg>
+			<map>
+				<entry key="1" value="Lenovo"></entry>
+				<entry key="2" value="Laptop"></entry>
+				<entry key="3" value="Ideapad"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+	<bean id="set" class="com.edu.spring.SetSpring">
+		<constructor-arg value="ABCD">
+		</constructor-arg>
+		<constructor-arg>
+			<set>
+				<value> Ashish</value>
+				<value>Kumar</value>
+			</set>
+		</constructor-arg>
+	</bean>
+</beans>
